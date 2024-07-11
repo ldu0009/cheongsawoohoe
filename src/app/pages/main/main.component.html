@@ -1,0 +1,31 @@
+<div class="w-full h-full flex flex-col overflow-y-auto">
+  <section
+    class="relative flex-none flex justify-center items-center w-full h-[100svh] bg-black"
+  >
+    <button
+      class="absolute top-4 right-4 w-16 h-16 rounded-full bg-black text-white transition-all transform duration-150 ease-in-out hover:bg-white hover:text-black z-20"
+      [routerLink]="'/gallery'"
+    >
+      gallery
+    </button>
+    <div class="absolute w-full h-full z-0">
+      <video
+        class="w-full h-full"
+        src=".\assets\videos\video01.mp4"
+        muted
+        autoplay
+        loop
+        (loadeddata)="videoPlay($event)"
+      ></video>
+    </div>
+    <div
+      class="w-full p-32 flex flex-col gap-4 justify-center items-center text-center align-middle text-white bg-black/60 z-10"
+    >
+      <h1 class="text-7xl select-none">C.S.W.H</h1>
+      <p class="text-xl select-none">청정지역에 사는 사람들의 우정 모임</p>
+    </div>
+  </section>
+  <section
+    class="flex-none flex justify-center items-center w-full h-[100svh] select-none bg-black"
+  ></section>
+</div>
