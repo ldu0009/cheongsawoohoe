@@ -1,12 +1,11 @@
-import { Component } from '@angular/core';
+import { NgClass } from "@angular/common";
+import { Component } from "@angular/core";
 
 @Component({
-  selector: 'app-gallery',
+  selector: "app-gallery",
   standalone: true,
-  imports: [],
-  templateUrl: './gallery.component.html',
-  styleUrl: './gallery.component.scss'
+  imports: [NgClass],
+  templateUrl: "./gallery.component.html",
+  styleUrl: "./gallery.component.scss",
 })
-export class GalleryComponent {
-
-}
+export class GalleryComponent {}
